@@ -346,9 +346,8 @@
 
 .profile-image {
   width: 100%;
-  height: auto;
+  height: 400px;
   object-fit: cover;
-  border-radius: 2000px;
 }
 
 /* About section */
