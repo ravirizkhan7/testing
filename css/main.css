@@ -326,6 +326,7 @@
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-xl);
+  border-radius: 2000px;
 }
 
 .image-container::before {
@@ -347,9 +348,11 @@
 .profile-image {
   width: 100%;
   height: 40rem;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
-  z-index: 2;
+  object-fit: cover;
+}
+.work-image {
+  width: 100%;
+  height: 40rem;
   object-fit: cover;
 }
 
