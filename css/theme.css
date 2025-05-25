@@ -1,0 +1,65 @@
+/* Theme styles */
+
+/* Light Theme - Default */
+.light-theme {
+  --bg-color: var(--neutral-50);
+  --text-primary: var(--neutral-900);
+  --text-secondary: var(--neutral-600);
+  --card-bg-color: white;
+  --hover-color: var(--neutral-200);
+  --btn-bg-color: var(--neutral-200);
+  --btn-hover-color: var(--neutral-300);
+  --tag-bg-color: var(--primary-100);
+  --skill-bar-bg: var(--neutral-200);
+  --form-bg-color: white;
+  --input-bg-color: white;
+  --input-border-color: var(--neutral-300);
+  --footer-bg-color: var(--neutral-800);
+  --footer-text-color: white;
+  --social-bg-color: var(--neutral-200);
+}
+
+/* Dark Theme */
+.dark-theme {
+  --bg-color: var(--neutral-900);
+  --text-primary: var(--neutral-100);
+  --text-secondary: var(--neutral-400);
+  --card-bg-color: var(--neutral-800);
+  --hover-color: var(--neutral-700);
+  --btn-bg-color: var(--neutral-700);
+  --btn-hover-color: var(--neutral-600);
+  --tag-bg-color: var(--primary-900);
+  --skill-bar-bg: var(--neutral-700);
+  --form-bg-color: var(--neutral-800);
+  --input-bg-color: var(--neutral-800);
+  --input-border-color: var(--neutral-700);
+  --footer-bg-color: var(--neutral-900);
+  --footer-text-color: var(--neutral-200);
+  --social-bg-color: var(--neutral-700);
+}
+
+/* Apply theme variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  transition: background-color var(--transition-normal),
+    color var(--transition-normal);
+}
+
+/* Theme toggle icons visibility */
+.light-theme .moon-icon {
+  display: block;
+}
+
+.light-theme .sun-icon {
+  display: none;
+}
+
+.dark-theme .moon-icon {
+  display: none;
+}
+
+.dark-theme .sun-icon {
+  display: block;
+  color: white;
+}

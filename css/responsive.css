@@ -1,0 +1,154 @@
+/* Responsive styles */
+
+/* Base mobile styles (up to 767px) */
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 56.25%; /* 9px */
+  }
+  
+  section {
+    padding: var(--space-10) 0;
+  }
+  
+  .section-title {
+    font-size: var(--fs-2xl);
+    margin-bottom: var(--space-6);
+  }
+  
+  .header {
+    padding: var(--space-3) 0;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    top: 7rem;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    box-shadow: var(--shadow-md);
+    padding: var(--space-4) 0;
+    gap: var(--space-4);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-normal);
+    z-index: var(--z-40);
+  }
+  
+  .nav-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .nav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: var(--radius-full);
+    margin-right: var(--space-3);
+  }
+  
+  .nav-toggle:hover {
+    background-color: var(--hover-color);
+  }
+  
+  .home-section {
+    padding-top: calc(var(--space-12) + 7rem);
+  }
+  
+  .home-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: var(--fs-4xl);
+  }
+  
+  .subtitle {
+    font-size: var(--fs-xl);
+  }
+  
+  .about-content,
+  .skills-content,
+  .contact-content {
+    flex-direction: column;
+    gap: var(--space-8);
+  }
+  
+  .about-text,
+  .skills-text {
+    text-align: center;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-4);
+  }
+  
+  .footer-links {
+    justify-content: center;
+  }
+  
+  .scroll-top {
+    bottom: 2rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+/* Tablet styles (768px - 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 62.5%; /* 10px */
+  }
+  
+  .home-content {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: var(--space-10);
+  }
+  
+  .about-content,
+  .skills-content,
+  .contact-content {
+    gap: var(--space-8);
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large desktop styles (1024px and up) */
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 62.5%; /* 10px */
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Extra-large desktop styles (1280px and up) */
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 62.5%; /* 10px */
+  }
+  
+  .container {
+    max-width: 130rem;
+  }
+}

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Ravi Rizkhan | Frontend Developer & UI/UX Designer</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body class="light-theme">
+    <header class="header" id="header">
+      <div class="container">
+        <a href="#" class="logo">MRR</a>
+        <nav class="nav" id="nav">
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Toggle Navigation"
+          >
+            <i data-feather="menu"></i>
+          </button>
+          <ul class="nav-menu" id="navMenu">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+          <i data-feather="sun" class="sun-icon"></i>
+          <i data-feather="moon" class="moon-icon"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="home-section">
+        <div class="container">
+          <div class="home-content">
+            <div class="home-text animate fade-in">
+              <p class="greeting">Hello, I'm</p>
+              <h1 class="title">Muhammad Ravi Rizkhan</h1>
+              <h2 class="subtitle">Frontend Developer & UI/UX Designer</h2>
+              <a href="#contact" class="btn primary-btn">Get in Touch</a>
+              <a href="#projects" class="btn secondary-btn">View My Work</a>
+            </div>
+            <div class="home-image animate slide-in">
+              <div class="image-container">
+                <img
+                  src="img/foto.jpg"
+                  alt="Muhammad Ravi Rizkhan"
+                  class="profile-image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="container">
+          <h2 class="section-title animate fade-in">About Me</h2>
+          <div class="about-content">
+            <div class="about-image animate slide-in">
+              <div class="image-container">
+                <img
+                  src="https://images.pexels.com/photos/5935794/pexels-photo-5935794.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="Muhammad Ravi Rizkhan working"
+                  class="work-image"
+                />
+              </div>
+            </div>
+            <div class="about-text animate fade-in">
+              <h3>Who am I?</h3>
+              <p>
+                I'm Muhammad Ravi Rizkhan, a passionate Frontend Developer and
+                UI/UX Designer based with a keen eye for creating beautiful,
+                functional, and user-centered digital experiences.
+              </p>
+              <p>
+                With a strong foundation in HTML, CSS, and JavaScript, I build
+                responsive websites and applications that work seamlessly across
+                all devices. My background in design allows me to bridge the gap
+                between aesthetics and functionality.
+              </p>
+              <p>
+                When I'm not coding or designing, you can find me exploring new
+                technologies, contributing to open-source projects, or sharing
+                my knowledge through writing and mentoring.
+              </p>
+              <div class="about-buttons">
+                <a href="#" class="btn secondary-btn">Download CV</a>
+                <a href="#contact" class="btn primary-btn">Let's Talk</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-section">
+        <div class="container">
+          <h2 class="section-title animate fade-in">My Projects</h2>
+          <div class="project-filters animate fade-in">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">
+              Web Development
+            </button>
+            <button class="filter-btn" data-filter="ui">UI/UX Design</button>
+            <button class="filter-btn" data-filter="other">Other</button>
+          </div>
+          <div class="projects-grid">
+            <div class="project-card animate fade-in" data-category="web">
+              <div class="project-image">
+                <img
+                  src="https://images.pexels.com/photos/5980856/pexels-photo-5980856.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="E-commerce Website"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://example.com/project1"
+                    target="_blank"
+                    class="project-link"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">E-commerce Website</h3>
+                <p class="project-description">
+                  A responsive e-commerce platform built with HTML, CSS, and
+                  JavaScript.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card animate fade-in" data-category="ui">
+              <div class="project-image">
+                <img
+                  src="https://images.pexels.com/photos/6444/pencil-typography-black-design.jpg?auto=compress&cs=tinysrgb&w=600"
+                  alt="Mobile App Design"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://example.com/project2"
+                    target="_blank"
+                    class="project-link"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Mobile App Design</h3>
+                <p class="project-description">
+                  UI/UX design for a fitness tracking mobile application.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Figma</span>
+                  <span class="tag">UI/UX</span>
+                  <span class="tag">Prototyping</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card animate fade-in" data-category="web">
+              <div class="project-image">
+                <img
+                  src="https://images.pexels.com/photos/5853464/pexels-photo-5853464.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="Portfolio Template"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://example.com/project3"
+                    target="_blank"
+                    class="project-link"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Portfolio Template</h3>
+                <p class="project-description">
+                  A customizable portfolio template for creative professionals.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card animate fade-in" data-category="other">
+              <div class="project-image">
+                <img
+                  src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="Weather App"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://example.com/project4"
+                    target="_blank"
+                    class="project-link"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Weather App</h3>
+                <p class="project-description">
+                  A weather application with dynamic data visualization.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">API</span>
+                  <span class="tag">CSS</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card animate fade-in" data-category="ui">
+              <div class="project-image">
+                <img
+                  src="https://images.pexels.com/photos/5439147/pexels-photo-5439147.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="Banking UI Redesign"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://example.com/project5"
+                    target="_blank"
+                    class="project-link"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Banking UI Redesign</h3>
+                <p class="project-description">
+                  UI/UX redesign for a banking application with improved user
+                  flows.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Figma</span>
+                  <span class="tag">UI/UX</span>
+                  <span class="tag">User Testing</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card animate fade-in" data-category="web">
+              <div class="project-image">
+                <img
+                  src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="Task Management App"
+                />
+                <div class="project-overlay">
+                  <a
+                    href="https://example.com/project6"
+                    target="_blank"
+                    class="project-link"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+              <div class="project-info">
+                <h3 class="project-title">Task Management App</h3>
+                <p class="project-description">
+                  A feature-rich task management application built with vanilla
+                  JavaScript.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills-section">
+        <div class="container">
+          <h2 class="section-title animate fade-in">My Skills</h2>
+          <div class="skills-content">
+            <div class="skills-text animate fade-in">
+              <h3>What I'm capable of</h3>
+              <p>
+                Over the years, I've acquired a diverse set of skills, ranging
+                from design to development. My expertise lies in crafting clean,
+                user-friendly interfaces that provide exceptional user
+                experiences.
+              </p>
+              <p>
+                I continuously enhance my skills by staying updated with the
+                latest trends and technologies in the industry.
+              </p>
+            </div>
+            <div class="skills-list animate fade-in">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <h4>HTML5</h4>
+                  <span>95%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <h4>CSS3</h4>
+                  <span>90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <h4>JavaScript</h4>
+                  <span>85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <h4>Figma</h4>
+                  <span>88%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 88%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <h4>React</h4>
+                  <span>80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <h4>UI/UX Design</h4>
+                  <span>92%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 92%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <h2 class="section-title animate fade-in">Get In Touch</h2>
+          <div class="contact-content">
+            <div class="contact-info animate slide-in">
+              <h3>Contact Information</h3>
+              <p>
+                Feel free to reach out! I'm always open to discussing new
+                projects, creative ideas, or opportunities to be part of your
+                vision.
+              </p>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <i data-feather="mail"></i>
+                  <span>ravi.rizkhan@example.com</span>
+                </div>
+                <div class="contact-item">
+                  <i data-feather="phone"></i>
+                  <span>+1 234 567 890</span>
+                </div>
+                <div class="contact-item">
+                  <i data-feather="map-pin"></i>
+                  <span>New York, USA</span>
+                </div>
+              </div>
+              <div class="social-links">
+                <a href="#" class="social-link" aria-label="GitHub">
+                  <i data-feather="github"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                  <i data-feather="linkedin"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                  <i data-feather="twitter"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Dribbble">
+                  <i data-feather="dribbble"></i>
+                </a>
+              </div>
+            </div>
+            <form class="contact-form animate fade-in">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn primary-btn">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 Muhammad Ravi Rizkhan. All Rights Reserved.</p>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="#home"
+      class="scroll-top"
+      id="scrollTop"
+      aria-label="Scroll to top"
+    >
+      <i data-feather="arrow-up"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/navigation.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
