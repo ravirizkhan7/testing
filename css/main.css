@@ -345,13 +345,12 @@
 }
 
 .image-container img {
-  width: 100%;
-  height: auto;
-  border-radius: 200px;
-  transition: transform var(--transition-normal);
+  border-radius: 2000px;
 }
 .image-container img:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 119, 182, 0.6);
+  transition: 0.3s;
 }
 
 .profile-image {
